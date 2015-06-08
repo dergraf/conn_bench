@@ -20,7 +20,7 @@ compile the project:
 
 run the server on localhost:5555
 
-    erl -pa _build/default/lib/*/ebin +K -s conn_bench
+    erl -pa _build/default/lib/*/ebin +K true -s conn_bench
     
 run the test senders (20000 connection, sending 10 random bytes every 250ms)
 
