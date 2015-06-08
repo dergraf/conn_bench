@@ -1,0 +1,15 @@
+{application, conn_bench,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  ranch
+                 ]},
+  {mod, { conn_bench_app, []}},
+  {env, [
+         {ranch_listener_config, [{port, 5555}]}
+        ]}
+ ]}.
